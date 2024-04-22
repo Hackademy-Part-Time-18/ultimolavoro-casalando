@@ -2,11 +2,10 @@
     <div class="container ">
         <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
             <div class="col-lg-12 px-0 text-center">
-                <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
-                <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and
-                    efficiently about what’s most interesting in this post’s contents.</p>
+                <h1 class="display-4 fst-italic">Scegli la tua casa </h1>
+                <p class="lead my-3">trova  il posto ideale per  te  e  per  la  tua  famiglia  dove  poter  trascorrere  la tua  vita , noi di casalando abbiamo pensato anche a  questo .</p>
                 <p class="lead mb-0">
-                    <a href="#" class="text-body-emphasis fw-bold">Continue reading...</a>
+                    <a href="#" class="text-body-emphasis fw-bold">Cosa aspetti iscriviti a soli 99,99$ al mese </a>
                 </p>
 
             </div>
