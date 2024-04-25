@@ -11,10 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('article_category', function (Blueprint $table) {
+        Schema::create('articles', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('article_id')->constrained();
-            $table->foreignId('category_id')->constrained();
+            $table->string('title');
+            $table->longText('body');
+            $table->string('image');
+            $table->string('slug')->unique(); //articolo-di-oggi
+            $table->foreignId('user_id')->constrained();
             $table->timestamps();
         });
     }

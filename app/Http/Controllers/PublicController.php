@@ -21,7 +21,7 @@ class PublicController extends Controller
         return view('contact');
     }
 
-    public function send(ContactFormRequest $request) //GET
+    public function send(ContactFormRequest $request) 
     {
         $data = [
             'name' => $request->input('name', 'Utente Anonimo'),
