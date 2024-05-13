@@ -5,7 +5,7 @@
                 <h1 class="display-5 fw-bold">Benvenuto </h1>
                 <p class="col-md-8 fs-4">Qui puoi creare nuovi articoli, clicca sul pulsante in basso per accedere alla
                     sezione dedicata </p>
-                <button class="btn btn-primary btn-lg" type="button">Nuovo Articolo</button>
+                <a href="{{route('articles.create')}}">Nuova articolo</a>
             </div>
         </div>
 

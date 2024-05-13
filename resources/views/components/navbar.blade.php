@@ -10,6 +10,11 @@
 @endguest
 @auth
         <span>Benvenuto, Tizio</span>
-        <a class="btn btn-sm btn-outline-secondary mx-2" href="#">Logout</a>
+        <form action="{{route('logout')}}" method="POST">
+                @csrf
+                <button class="dropdown-item">
+                    Esci
+                </button>
+            </form>
         @endauth
     </div>
