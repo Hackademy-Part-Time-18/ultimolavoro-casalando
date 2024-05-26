@@ -9,10 +9,10 @@
         <a class="btn btn-sm btn-outline-secondary mx-2" href="{{ route('login') }}">Entra</a>
 @endguest
 @auth
-        <span>Benvenuto, Tizio</span>
+        <a href="{{ route('home') }}"">Benvenuto</a>
         <form action="{{route('logout')}}" method="POST">
                 @csrf
-                <button class="dropdown-item">
+                <button class="dropdown-item btn btn-sm btn-outline-secondary mx-2">
                     Esci
                 </button>
             </form>

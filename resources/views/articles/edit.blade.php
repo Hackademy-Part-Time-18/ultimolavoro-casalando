@@ -39,7 +39,7 @@
 
                     </div>
                     <div class="form-floating mb-3">
-                        <img width="100" src="{{ Storage::url($article->image) }}" />
+                        <img width="0" src="{{ Storage::url($article->image) }}" />
                         <input class="form-control" id="image" name="image" value="" type="file">
                         @error('image')
                             <div class="alert alert-danger" role="alert">

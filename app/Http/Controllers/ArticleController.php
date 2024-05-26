@@ -21,8 +21,8 @@ class ArticleController extends Controller
     {
         $articles = Article::paginate(2);
         return view('articles.index', compact('articles'));
-        //return view('articles.index', ['article' => $articles]);
-        //return view('articles.index', ['article' => Article::all()]);
+        return view('articles.index', ['article' => $articles]);
+        return view('articles.index', ['article' => Article::all()]);
 
     }
 
@@ -32,6 +32,8 @@ class ArticleController extends Controller
     public function create()
     {
         return view('articles.create', ['categories' => Category::all ()]);
+
+        return view('articles.create');
     }
 
     /**
@@ -59,6 +61,19 @@ class ArticleController extends Controller
         $article->categories()->attach($request->categories);
 
         return redirect()->route('articles.index');
+
+
+        $request->validate([
+            'title' => 'required',
+            'content' => 'required',
+        ]);
+
+        Article::create($request->all());
+
+        return redirect()->route('articles.index')
+                         ->with('success', 'Article created successfully.');
+
+
     }
 
     /**
@@ -66,7 +81,7 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-        //
+   
     }
 
     /**

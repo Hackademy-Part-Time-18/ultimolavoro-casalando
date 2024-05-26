@@ -31,7 +31,7 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="category_id" name="categories[]"
                                     value="{{ $category->id }}">
-                                <label class="form-check-label" for="category_id">{{ $category->name }}</label>
+                                <label class="form-check-label" for="category_id">{{ $category->name }}NOME CATEGORIA</label>
                             </div>
                         @endforeach
 

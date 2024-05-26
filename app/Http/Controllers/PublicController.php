@@ -11,8 +11,10 @@ use Illuminate\Support\Facades\Mail;
 
 class PublicController extends Controller
 {
-    public function homepage () {
-        return view('homepage');
+   
+
+    public function casalando () {
+        return view('casalando');
     }
     public function home () {
         return view('home');
@@ -30,6 +32,6 @@ class PublicController extends Controller
         ];
 
         Mail::to('cambiasso.s@hotmail.it')->send(new ContactMail($data));
-        return redirect()->route('homepage')->with('email_send', 'Grazie per aver inviato l\'email');
+        return redirect()->route('casalando')->with('email_send', 'Grazie per aver inviato l\'email');
     }
 }
