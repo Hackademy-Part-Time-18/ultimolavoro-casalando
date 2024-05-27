@@ -19,7 +19,7 @@
                         <th scope="col">Immagine</th>
                         <th scope="col">Titolo</th>
                         <th scope="col">Autore</th>
-                        <th scope="col">Categorie</th>
+                     
                         <th scope="col"></th>
                     </tr>
                 </thead>
@@ -29,7 +29,7 @@
                             <th scope="row">#{{ $article->id }}</th>
                             <td>
                                 <img class="card-img-top" style="width:3rem" src="{{ Storage::url($article->image) }}"
-                                    alt="..." />
+                                    alt="error" />
                             </td>
                             <td>{{ $article->title }}</td>
 

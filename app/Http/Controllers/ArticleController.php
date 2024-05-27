@@ -44,10 +44,10 @@ class ArticleController extends Controller
 
         $article_image = '';
         if ($request->hasFile('image')) {
-            //$file_name = $request->file('image')->getClientOriginalName() . rand(1, 1000);
+            $file_name = $request->file('image')->getClientOriginalName() . rand(1, 1000);
             $file_name = $request->file('image')->getClientOriginalName();
             $article_image = $request->file('image')->storeAs('public/articles-image', $file_name);
-            //$article_image = $request->file('image')->store('public/articles-image');
+            $article_image = $request->file('image')->store('public/articles-image');
         }
 
         $article = Article::create([
@@ -81,7 +81,7 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-   
+      
     }
 
     /**

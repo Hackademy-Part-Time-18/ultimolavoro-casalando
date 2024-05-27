@@ -5,7 +5,7 @@
                <h1>BENVENUTO</h1>
                 <p class="col-md-8 fs-4">Qui puoi creare nuovi articoli, clicca sul pulsante in basso per accedere alla
                     sezione dedicata </p>
-                <a href="{{route('articles.create')}}">Nuova articolo</a>
+                <a href="{{route('articles.create')}}">Nuovo annuncio</a>
             </div>
         </div>
 
@@ -14,7 +14,7 @@
                 <div class="h-100 p-5 text-bg-dark rounded-3">
                     <h2>Amministra gli Articoli</h2>
                     
-                    <a class="btn btn-outline-light" type="button" href="{{ route('articles.store') }}">Vedi Articoli</a>
+                    <a class="btn btn-outline-light" type="button" href="{{ route('articles.store') }}">Vai ad annunci</a>
                 </div>
             </div>
            
